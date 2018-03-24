@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: 127.0.0.1
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: tripletriade_development
+  username: tripletriade
+  password: 123qwerty
+
+test:
+  <<: *default
+  database: tripletriade_test
+  username: tripletriade
+  password: 123qwerty
+
+production:
+  <<: *default
+  database: tripletriade_production
+  username: tripletriade
+  password: 123qwerty
