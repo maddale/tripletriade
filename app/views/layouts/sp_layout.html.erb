@@ -9,6 +9,17 @@
 	</head>
 
 	<body>
-		<%= yield %>
+	<%= link_to 'Home', root_path, class: "btn btn-outline-light home-ico" %>
+		
+		<div class="welcome">
+			<div class="row">
+				<div class="container">
+											
+							<%= yield %>
+						
+				</div>
+			</div>
+		</div>
+	
 	</body>
 </html>
