@@ -1,0 +1,33 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-pic, .show-name, .show-info {
+	padding: 20px;
+	color: #343b40;
+}
+
+.show-bg {
+	background-color: #fff;
+	.divider {
+		margin: 0 20px;
+	}
+}
+
+.show-name {
+	h2{
+	margin: 0;
+	}
+}
+
+
+
+.user-pic {
+	img {
+		max-width: 100%;
+	}
+}
+
+.welcome-top {
+	justify-content: start;
+}

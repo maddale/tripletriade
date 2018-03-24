@@ -2,13 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// navbar customize
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+
+//welcome-page
+.content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
 .welcome {
+	padding-top: 20px;
 	background-image: url('bg-bb.jpg');
 	color: white;
-	height: 100%;
-	overflow: auto;
-	.row {
-		min-height: 100%;
+	flex-grow: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	.welcome-row {
+		// min-height: 100%;
 		max-width: 100%;
 		align-items: center;
 	}

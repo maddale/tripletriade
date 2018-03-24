@@ -9,17 +9,21 @@
 	</head>
 
 	<body>
-	<%= link_to 'Home', root_path, class: "btn btn-outline-light home-ico" %>
+		<div class="content">
+			<%= render 'shared/navbar' %>
+
 		
-		<div class="welcome">
-			<div class="row">
+			<div class="welcome welcome-top">
 				<div class="container">
-											
-							<%= yield %>
-						
+				<% flash.each do |key, msg| %>
+					<%= content_tag :p, msg, class: "alert alert-#{key}" %>
+					<% end %>
+						<div class="row">
+						<%= yield %>
+					</div>
 				</div>
 			</div>
+
 		</div>
-	
 	</body>
-</html>
+	</html>

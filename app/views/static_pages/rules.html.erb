@@ -1,7 +1,7 @@
 <div class="col">
 	<div class="plate">
 		<h1>Правила игры</h1>
-		<p>Для того, что бы сыграть в карточную игру Triple Triade, Вам в первую очередь нужно <%= link_to 'зарегистрироваться', '#' %> на нашем сайте.</p>
+		<p>Для того, что бы сыграть в карточную игру Triple Triade, Вам в первую очередь нужно <%= link_to 'зарегистрироваться', new_user_registration_path %> на нашем сайте.</p>
 		<p>После регистрации вы получите 1000 монет на ваш виртуальный счёт. Эти монеты понадобятся вам, чтобы покупать карты для игры.</p>
 		<p>Теперь после регистрации вы попадаете в магазин с картами. На вашем счету 1000 монет и на эти деньги вам надо набрать себе коллоду карт для игры.
 		Стоимость карт различается в зависимости от уровня карты.
@@ -16,6 +16,6 @@
 		<p>Пожалуй хватит теории. Лучше всё опробовать на практике и доразобраться уже там, ведь игра действительно простая!</p>
 		<h3>Video tutorial:</h3>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/264wi-_Yxmw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<p><%= link_to 'Регистрация', '#', class: "btn btn-success" %> <%= link_to 'Вход', '#', class: "btn btn-primary" %></p>
+		<p><%= link_to 'Регистрация', new_user_registration_path, class: "btn btn-success" %> <%= link_to 'Вход', new_user_session_path, class: "btn btn-primary" %></p>
 	</div>
 </div>

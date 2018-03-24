@@ -8,6 +8,10 @@ end
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'devise'
+gem 'enumerize'
+gem "letter_opener", :group => :development
+
 
   
 

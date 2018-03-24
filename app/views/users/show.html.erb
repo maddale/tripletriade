@@ -1,0 +1,35 @@
+<div class="col-4">
+	<div class="show-bg">
+		<div class="user-pic">
+			<img src="/assets/default-user-image.png" alt="">
+			<%= link_to 'Редактировать', edit_user_path(current_user), class: "btn btn-success d-block" %>
+		</div>
+	</div>
+</div>
+
+<div class="col-8">
+	<div class="show-bg">
+		<div class="show-name">
+			<h2><%= @user.name %></h2>
+		</div>
+		<div class="divider"></div>
+		<div class="show-info">
+			<div class="row">
+				<div class="col-4">Ник:</div>
+				<div class="col-8"><%= @user.nickname %></div>
+			</div>
+			<div class="row">
+				<div class="col-4">E-mail:</div>
+				<div class="col-8"><%= @user.email %></div>
+			</div>
+			<div class="row">
+				<div class="col-4">Возраст:</div>
+				<div class="col-8"><%= @user.age %></div>
+			</div>
+			<div class="row">
+				<div class="col-4">Пол:</div>
+				<div class="col-8"><%= @user.sex %></div>
+			</div>
+		</div>
+	</div>
+</div>
