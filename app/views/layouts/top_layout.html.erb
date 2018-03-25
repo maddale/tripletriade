@@ -15,9 +15,7 @@
 		
 			<div class="welcome welcome-top">
 				<div class="container">
-				<% flash.each do |key, msg| %>
-					<%= content_tag :p, msg, class: "alert alert-#{key}" %>
-					<% end %>
+				<%= render 'shared/flash_messages' %>
 						<div class="row">
 						<%= yield %>
 					</div>

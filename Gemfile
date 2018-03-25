@@ -12,6 +12,8 @@ gem 'devise'
 gem 'enumerize'
 gem "letter_opener", :group => :development
 
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 
   
 

@@ -6,5 +6,7 @@ class User < ApplicationRecord
 
   extend Enumerize
   enumerize :sex, in: [:male, :female]
+
+  mount_uploader :avatar, AvatarUploader
  
 end
